@@ -21,26 +21,22 @@ main {
     margin: auto;
 }
 
+img {
+    width: 100%;
+}
+
 .title-header {
     display: flex;
     justify-content: center;
-    height: 63px;
     background: var(--White);
-    width: 375px;  
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
+    z-index: 10;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
 .title-header h1 {
     font-family: 'Shrikhand', serif;
     margin: 14px 89px 13px 89px;
-}
-
-.local-recherche i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    color: var(--grey);
 }
 
 .local-recherche {
@@ -49,11 +45,26 @@ main {
     align-items: center;
     height: 50px;
     gap: 17px;
-    width: 375px;
     background: var(--grey-2);
+    
+}
+
+.search-field {
+    display: flex;
+    width: 150%;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.local-recherche i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey); 
 }
 
 .local-recherche input {
+    width: 100%;
     border: none;
     background: var(--grey-2);
 }
@@ -66,14 +77,11 @@ main {
 
 .content-reservation {
     background: var(--background);
-    width: 375px;
     font-family: 'Roboto',sans-serif;
     padding-bottom: 25px;
 }
 
 .reservation h2 {
-    width: 275px;
-    height: 68px;
     margin: 0;
     padding: 58px 58px 0px 42px;
     text-align: center;
@@ -89,8 +97,6 @@ main {
     font-family: 'Roboto',sans-serif;
     font-size: 18px;
     font-weight: 300;
-    width: 315px;
-    height: 46px;
 }
 
 .btn-reservation button{
@@ -110,8 +116,6 @@ main {
 
 .fonctionnement h3{
     margin: 48px 80px 0px 20px;
-    width: 275px;
-    height: 31px;
     font-family: 'Roboto',sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -125,6 +129,23 @@ main {
     gap: 25px;
 }
 
+.btn-fonctionnement i {
+    padding: 20px;
+    width: 13px;
+    height: 20px;
+}
+
+.btn-fonctionnement button {
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    background: var(--Background, #F6F6F6);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .btn-fonctionnement span {
     font-family: 'Roboto';
     color: white;
@@ -133,24 +154,11 @@ main {
     height: 24px;
     border-radius: 60%;
     padding: 4px;
-}
-
-.btn-fonctionnement i {
-    padding: 20px;
-    width: 13px;
+    position: absolute;
+    width: 20px;
     height: 20px;
-}
-
-.btn-fonctionnement button {
-    border-radius: 20px;
-    border: none;
-    background: var(--Background, #F6F6F6);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    width: 322px;
-    height: 72px;
-    font-family: 'Roboto',sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    left: -10px;
+    top: calc(50% - 10px);
 }
 
 .btn-fonctionnement .fa-mobile-alt {
@@ -167,8 +175,6 @@ main {
 
 .restaurants {
     background: var(--background, #F6F6F6);
-    width: 375px;
-    height: 2252px;
     gap: 18px;
 }
 
@@ -184,15 +190,12 @@ main {
 }
 
 .resto-cards img{
-    width: 346px;
-    height: 231px;
     border-radius: 15px 15px 0px 0px;
 }
 
 .resto-cards {
     background: #FFF;
     border-radius: 15px 15px 15px 15px;
-    width: 346px;
 }
 
 .card-txt {
