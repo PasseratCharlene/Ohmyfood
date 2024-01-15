@@ -1,0 +1,139 @@
+* {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', serif;
+}
+
+:root {
+    --grey: #353535;
+    --grey-2: #EAEAEA;
+    --White: #FFF;
+    --background: #F6F6F6;
+    --Primary: #9356DC;
+    --Grey-Tint4: #7E7E7E;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 14px 89px 13px 17px;
+    background: var(--White); 
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
+    margin: 0px;
+}
+
+.title-header i{
+    padding-right: 42px;
+    width: 30px;
+    height: 30px;
+}
+
+.img_palette img{
+    object-fit: cover;
+    width: 375px;
+    height: 275px;
+}
+
+.menu {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: var(--background);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title_menu_2 {
+    padding: 32px 17px 0px 17px;
+    margin: 0px;
+    font-family: 'Shrikhand', serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.title_menu_2 i {
+    margin-left: 30px;
+}
+
+.title_menu_3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cards_menu {
+    display: flex;
+    background: var(--White);
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.cards_menu h4 {
+    display: flex;
+    flex-direction: column;
+    height: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards_menu p {
+    display: flex;
+    height: 19px;
+    font-family: 'Roboto';
+    font-size: 15;
+    font-weight: 500;
+}
+
+.cards_menu span {
+    display: flex;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.btn-commande {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 82px 82px;
+    border: none;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    color: var(--White);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 13px 19px 13px 19px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    width: 186px;
+    height: 50px;
+}
+
+.box-liste {
+    background: var(--grey);
+    color: white;
+}
+
+.box-liste .logo {
+    margin: 22px 25px 22px 25px;
+}
+
+.box-liste h2 {
+    font-family: 'Shrikhand', serif;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 16px;
+}
+
+.liste a{
+    color: White;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 22px 25px 22px 25px;
+}
