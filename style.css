@@ -51,7 +51,7 @@ img {
 
 .search-field {
     display: flex;
-    width: 150%;
+    /* width: 150%; */
     gap: 5px;
     align-items: baseline;
 }
@@ -132,7 +132,6 @@ img {
 .btn-fonctionnement i {
     padding: 20px;
     width: 13px;
-    height: 20px;
 }
 
 .btn-fonctionnement button {
@@ -156,7 +155,6 @@ img {
     padding: 4px;
     position: absolute;
     width: 20px;
-    height: 20px;
     left: -10px;
     top: calc(50% - 10px);
 }
@@ -190,6 +188,9 @@ img {
 }
 
 .resto-cards img{
+    aspect-ratio: 340/203;
+    object-fit: cover;
+    object-position: center;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -199,21 +200,24 @@ img {
 }
 
 .card-txt {
+    display: flex;
     padding-left: 13px;
+    justify-content: space-between;
 }
 
 .card-txt .fa-heart {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: end;
+    align-items: center;
+    font-size: 22px;
+    margin-right: 25px;
 }
 
 .card-title {
     font-family: 'Roboto',sans-serif;
     font-size: 18px;
     font-weight: 700;
-    height: 20px;
     margin: 16px 63px 5px 16px;
 }
 
