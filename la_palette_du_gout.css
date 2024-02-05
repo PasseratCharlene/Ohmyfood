@@ -35,6 +35,42 @@
     height: 275px;
 } */
 
+.likes {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.likes img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.no-like {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.liked {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.likes:hover .no-like{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.likes:hover .liked {
+    opacity: 1;
+    transition: 0.5s;
+}
+
 .menu {
     display: inline-flex;
     flex-direction: column;
