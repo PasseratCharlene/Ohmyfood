@@ -9,6 +9,12 @@
         font-size: 2rem;
         font-weight: 500;
     }
+
+   .btn-fonctionnement {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
     
     .title-restaurant {
         display: flex;
