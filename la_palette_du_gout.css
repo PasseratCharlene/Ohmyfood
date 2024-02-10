@@ -71,6 +71,7 @@ table {
     background: var(--White); 
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
     margin: 0px;
+    font-family: 'Shrikhand', serif;
 }
 
 .title-header i{
@@ -213,7 +214,7 @@ table {
 }
 
 .box-liste .logo {
-    margin: 22px 25px 22px 25px;
+   padding:22px;
 }
 
 .box-liste h2 {
