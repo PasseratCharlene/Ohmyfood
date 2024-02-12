@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
@@ -18,35 +67,80 @@
     flex-direction: row;
     justify-content: center;
     padding: 14px 89px 13px 17px;
+    /* height: 63px; */
     background: var(--White); 
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
     margin: 0px;
+    font-family: 'Shrikhand', serif;
 }
 
 .title-header i{
     padding-right: 42px;
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
 }
 
 .img_palette img{
-    object-fit: cover;
-    width: 375px;
-    height: 275px;
+    width: 100%;
+    aspect-ratio: 375/275;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.likes {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.likes img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.no-like {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.liked {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.likes:hover .no-like{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.likes:hover .liked {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .menu {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
     background: var(--background);
     border-radius: 20px 20px 0px 0px;
+    margin-top: -20px;
+    z-index: 10;
+    position: relative;
+    padding-inline: 17px;
 }
 
 .title_menu_2 {
-    padding: 32px 17px 0px 17px;
-    margin: 0px;
     font-family: 'Shrikhand', serif;
     font-size: 28px;
     font-weight: 400;
@@ -57,6 +151,8 @@
 }
 
 .title_menu_3 {
+    /* width: 275px;
+    height: 27px; */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -68,12 +164,14 @@
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
     border-radius: 15px;
     padding: 15px;
+    justify-content: space-between;
+    align-items: end;
 }
 
 .cards_menu h4 {
     display: flex;
     flex-direction: column;
-    height: 21px;
+    margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -81,9 +179,8 @@
 
 .cards_menu p {
     display: flex;
-    height: 19px;
     font-family: 'Roboto';
-    font-size: 15;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -109,8 +206,6 @@
     font-family: 'Roboto',sans-serif;
     font-size: 15px;
     font-weight: 500;
-    width: 186px;
-    height: 50px;
 }
 
 .box-liste {
@@ -119,7 +214,7 @@
 }
 
 .box-liste .logo {
-    margin: 22px 25px 22px 25px;
+   padding:22px;
 }
 
 .box-liste h2 {
