@@ -1,9 +1,3 @@
-* {
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', serif;
-}
-
 :root {
     --grey: #353535;
     --grey-2: #EAEAEA;
@@ -123,29 +117,5 @@
     font-weight: 500;
 }
 
-.box-liste {
-    background: var(--grey);
-    color: white;
-}
-
-.box-liste .logo {
-   padding:22px;
-}
-
-.box-liste h2 {
-    font-family: 'Shrikhand', serif;
-    font-size: 18px;
-    font-weight: 400;
-    gap: 16px;
-}
-
-.liste a{
-    color: White;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 500;
-    margin: 22px 25px 22px 25px;
-}
 
 

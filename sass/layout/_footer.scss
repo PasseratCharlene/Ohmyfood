@@ -1,0 +1,26 @@
+//**** FOOTER *****//
+
+.box-liste {
+    background: var(--grey);
+    color: white;
+    width: 100%;
+
+    &__logo {
+        margin: 22px 25px 22px 25px;
+        font-family: 'Shrikhand', serif;
+        font-size: 18px;
+        font-weight: 400;
+        gap: 16px;
+        padding-top: 20px;
+    }
+
+    &__liste a {
+        color: White;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 500;
+        margin: 22px 25px 22px 25px;
+    }
+    
+}

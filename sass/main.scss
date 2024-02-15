@@ -1,3 +1,20 @@
+//**** System Pattern 7-1 ****//
+
+//**** Abstracts ****//
 @use "abstracts/variables";
+
+//**** Base ****//
 @use "base/reset";
+@use "base/typography";
+
+//**** Components ****//
 @use "components/likes";
+
+//**** Layout ****//
+@use "layout/main";
+@use "layout/header";
+@use "layout/footer";
+
+//**** Pages ****//
+@use "pages/home";
+@use "pages/restaurant";

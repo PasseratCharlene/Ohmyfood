@@ -52,6 +52,12 @@ table {
   border-spacing: 0;
 }
 
+* {
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", serif;
+}
+
 .likes {
   position: relative;
   width: 25px;
@@ -81,6 +87,124 @@ table {
 .likes:hover .liked {
   opacity: 1;
   transition: 0.5s;
+}
+
+main {
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: var(--White);
+  z-index: 10;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header__logo {
+  font-family: "Shrikhand", serif;
+  margin: 14px 89px 13px 89px;
+}
+
+.box-liste {
+  background: var(--grey);
+  color: white;
+  width: 100%;
+}
+.box-liste__logo {
+  margin: 22px 25px 22px 25px;
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: 400;
+  gap: 16px;
+  padding-top: 20px;
+}
+.box-liste__liste a {
+  color: White;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  margin: 22px 25px 22px 25px;
+}
+
+img {
+  width: 100%;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 17px;
+  background: var(--grey-2);
+  display: flex;
+  /* width: 150%; */
+  gap: 5px;
+  align-items: baseline;
+}
+.search-field__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey);
+}
+.search-field__input input {
+  margin: 20px;
+  border: none;
+  background: var(--grey-2);
+}
+.search-field__input::placeholder {
+  color: var(--grey);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.info-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 25px;
+}
+.info-restaurant__heading {
+  margin: 0;
+  padding: 58px 58px 0px 42px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.info-restaurant__description {
+  text-align: center;
+  padding: 26px 34px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.info-restaurant__btn {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  color: var(--White);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 13px 19px 13px 19px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition-duration: 200ms;
+}
+.info-restaurant__btn:hover {
+  background-color: #b195b8;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px rgb(143, 76, 163);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */

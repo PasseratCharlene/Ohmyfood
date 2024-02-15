@@ -15,28 +15,27 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="title-header">
-            <h1>ohmyfood</h1>
+    <header class="header">
+            <h1 class="header__logo">ohmyfood</h1>
     </header>
     <!-- Main -->
     <main>
         <!-- Section Recherche -->
-        <section class="local-recherche">
             <div class="search-field">
-                <label for="city"><i class="fas fa-map-marker-alt"></i></label>
-                <input name="city" id="city" type="text" placeholder="Paris, Belleville">
-           </div>
-        </section>
-        <!-- Section Reservation -->
-        <section>
-            <div class="content-reservation">
-                <div class="reservation">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
+                <div class="search-field__icon">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-                    <button class="btn-reservation">Explorer nos restaurants</button>
-            </div>    
-            </section>
+                <span class="search-field__input">
+                    <input name="city" id="city" type="text" placeholder="Paris, Belleville">
+                </span>
+           </div>
+
+        <!-- Section Reservation -->
+                <div class="info-restaurant">
+                    <h2 class="info-restaurant__heading">Réservez le menu qui vous convient</h2>
+                    <h4 class="info-restaurant__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
+                    <button class="info-restaurant__btn btn">Explorer nos restaurants</button>
+                </div>    
             <!-- Fonctionnement -->
             <section>
                     <h2 class="fonctionnement">Fonctionnement</h2>
@@ -119,19 +118,17 @@
     <!-- Footer -->
     <footer>
         <div class="box-liste">
-            <div class="logo">
-                <h2>Ohmyfood</h2>
-            </div>
-            <div class="liste">
+                <h2 class="box-liste__logo">Ohmyfood</h2>
+            <div class="box-liste__liste">
                 <a href=""><i class="fas fa-utensils"></i> Proposer un restaurant</a>
             </div>
-            <div class="liste">
+            <div class="box-liste__liste">
                 <a href=""><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
             </div>
-            <div class="liste">
+            <div class="box-liste__liste">
                 <a href="">Mentions légales</a>
             </div>
-            <div class="liste">
+            <div class="box-liste__liste">
                 <a href="">Contact</a>
             </div>
         </div>

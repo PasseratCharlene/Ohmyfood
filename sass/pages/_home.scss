@@ -1,0 +1,95 @@
+//**** BEGIN MAIN  ****//
+
+//**** img card restaurant ****//
+img {
+    width: 100%;
+}
+
+//**** BEGIN SEARCH ****//
+
+.search-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 17px;
+    background: var(--grey-2);
+    display: flex;
+    /* width: 150%; */
+    gap: 5px;
+    align-items: baseline;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--grey); 
+    }
+    &__input input {
+        margin: 20px;
+        border: none;
+        background: var(--grey-2);
+    }
+    &__input::placeholder {
+        color: var(--grey);
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}
+
+//**** BEGIN INFO RESTAURANT ****//
+
+.info-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    font-family: 'Roboto',sans-serif;
+    padding-bottom: 25px;
+
+    &__heading {
+        margin: 0;
+        padding: 58px 58px 0px 42px;
+        text-align: center;
+        font-family: 'Roboto',sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__description {
+        text-align: center;
+        padding: 26px 34px;
+        margin: 0;
+        font-family: 'Roboto',sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    &__btn {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+        color: var(--White);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        padding: 13px 19px 13px 19px;
+        font-family: 'Roboto',sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        transition-duration: 200ms;
+    }
+    &__btn:hover{
+        background-color: #b195b8; 
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px rgb(143, 76, 163);
+        transform: scale(1.10);
+    }
+}
+
+//**** BEGIN FONCTION ****//
+
+
+
+
+
