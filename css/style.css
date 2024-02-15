@@ -22,7 +22,11 @@ body {
     gap: 18px;
 }
 
-.restaurant__heading {
+.restaurant-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto',sans-serif;
     font-size: 24px;
     font-weight: 700;
