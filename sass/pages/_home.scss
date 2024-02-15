@@ -131,6 +131,21 @@ img {
         left: -12px;
         top: calc(50% - 12px);
     }
+    &__btn .fa-mobile-alt {
+        color: var(--Grey-Tint4);
+        width: 13px;
+        height: 19px;
+    }
+    &__btn .fa-list {
+        color: var(--Grey-Tint4);
+        width: 13px;
+        height: 19px;
+    }
+    &__btn .fa-store {
+        color: var(--Primary, #9356DC);
+        width: 13px;
+        height: 19px;
+    }
 }
 
 //**** BEGIN RESTAURANT ****//

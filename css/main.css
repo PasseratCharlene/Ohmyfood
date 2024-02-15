@@ -249,5 +249,20 @@ img {
   left: -12px;
   top: calc(50% - 12px);
 }
+.fonctionnement__btn .fa-mobile-alt {
+  color: var(--Grey-Tint4);
+  width: 13px;
+  height: 19px;
+}
+.fonctionnement__btn .fa-list {
+  color: var(--Grey-Tint4);
+  width: 13px;
+  height: 19px;
+}
+.fonctionnement__btn .fa-store {
+  color: var(--Primary, #9356DC);
+  width: 13px;
+  height: 19px;
+}
 
 /*# sourceMappingURL=main.css.map */
