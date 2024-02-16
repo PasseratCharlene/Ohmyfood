@@ -312,6 +312,9 @@ img {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  border-bottom: #99E2D0 3px solid;
+  padding-bottom: 5px;
+  width: 40px;
 }
 
 .cards-menu {
