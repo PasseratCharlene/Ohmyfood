@@ -11,3 +11,29 @@
     margin: 0px;
     font-family: 'Shrikhand', serif;
 }
+
+//**** BEGIN RESTAURANT ****//
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: var(--background);
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -20px;
+    z-index: 10;
+    position: relative;
+    padding-inline: 17px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 32px;
+    }
+    &__title-menu {
+        font-family: 'Shrikhand', serif;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
