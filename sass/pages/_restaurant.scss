@@ -14,6 +14,11 @@
 
 //**** BEGIN RESTAURANT ****//
 
+.img_palette img{
+    width: 100%;
+    aspect-ratio: 375/275;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
