@@ -6,9 +6,9 @@
         position: absolute;
         width: 25px;
         height: 25px;
-        object-fit: contain;
+        object-fit: contain !important;
         justify-content: center;
-        align-items: center;
+        align-items: center !important;
         border-radius: 0;
     }
     .no-like {

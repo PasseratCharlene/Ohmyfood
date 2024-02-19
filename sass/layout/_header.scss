@@ -1,11 +1,14 @@
+@import "./../abstracts/variables";
+$white:#FFF;
+
 //**** header ****//
 
 .header {
     display: flex;
     justify-content: center;
-    background: var(--White);
+    background: $white;
     z-index: 10;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     position: relative;
 
     &__logo {

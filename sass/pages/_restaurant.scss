@@ -1,3 +1,8 @@
+@import "./../abstracts/variables";
+$white:#FFF;
+$background: #F6F6F6;
+$Green: #99E2D0;
+
 //**** BEGIN HEADER ****//
 
 .title-header {
@@ -5,10 +10,9 @@
     flex-direction: row;
     justify-content: center;
     padding: 14px 89px 13px 17px;
-    /* height: 63px; */
-    background: var(--White); 
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
-    margin: 0px;
+    background: $white; 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); 
+    margin: 0;
     font-family: 'Shrikhand', serif;
 
     & i {
@@ -27,8 +31,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background: var(--background);
-    border-radius: 20px 20px 0px 0px;
+    background: $background;
+    border-radius: 20px 20px 0 0;
     margin-top: -20px;
     z-index: 10;
     position: relative;
@@ -51,15 +55,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    border-bottom: #99E2D0 3px solid;
+    border-bottom: $Green 3px solid;
     padding-bottom: 5px;
     width: 40px;
 }
 
 .cards-menu {
     display: flex;
-    background: var(--White);
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+    background: $white;
+    box-shadow: 0 4.011px 15.043px 0 rgba(0, 0, 0, 0.10);
     border-radius: 15px;
     padding: 15px;
     justify-content: space-between;
@@ -75,31 +79,15 @@
     }
     & p {
         display: flex;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 500;
     }
     & span {
         display: flex;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 700;
         padding-left: 40px;
     }
-}
-
-.btn-commande {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px 82px 82px;
-    border: none;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    color: var(--White);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    padding: 13px 19px 13px 19px;
-    font-family: 'Roboto',sans-serif;
-    font-size: 15px;
-    font-weight: 500;
 }

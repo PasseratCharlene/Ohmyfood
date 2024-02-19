@@ -1,0 +1,33 @@
+@import "./../abstracts/variables";
+$primary:#9356DC;
+$secondary:#FF79DA;
+$purple:#b195b8;
+$White: #FFF;
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background: linear-gradient(193deg, $primary -11.44%, $secondary 123.93%);
+    color: $White;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 13px 19px 13px 19px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition-duration: 200ms;
+    align-self: center;
+    min-width: 200px;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    &:hover{
+        background-color: $purple; 
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px rgb(143, 76, 163);
+        transform: scale(1.10);
+    }
+}
+    

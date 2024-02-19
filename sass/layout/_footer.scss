@@ -1,8 +1,12 @@
+@import "./../abstracts/variables";
+$grey: #353535;
+$white:#FFF;
+
 //**** FOOTER *****//
 
 .box-liste {
-    background: var(--grey);
-    color: white;
+    background:$grey;
+    color:$white;
     width: 100%;
 
     &__logo {
@@ -15,7 +19,7 @@
     }
 
     &__liste a {
-        color: White;
+        color:$white;
         text-decoration: none;
         font-family: 'Roboto';
         font-size: 16px;

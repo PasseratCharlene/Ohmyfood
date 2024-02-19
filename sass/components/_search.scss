@@ -1,0 +1,36 @@
+@import "./../abstracts/variables";
+$grey: #353535;
+$grey-2: #EAEAEA;
+
+//**** Search ****//
+
+.search-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 17px;
+    background: $grey-2;
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $grey; 
+    }
+    &__input input {
+        margin: 20px;
+        border: none;
+        background: $grey-2;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__input::placeholder {
+        color: $grey;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}
