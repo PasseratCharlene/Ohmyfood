@@ -19,7 +19,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
 }
 
@@ -27,10 +27,6 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol, ul {
@@ -92,22 +88,18 @@ table {
 .search-field {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 50px;
-  gap: 17px;
   background: #EAEAEA;
-  display: flex;
-  gap: 5px;
   align-items: baseline;
 }
 .search-field__icon {
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 35px;
   color: #353535;
 }
 .search-field__input input {
   margin: 20px;
+  padding-left: 0;
   border: none;
   background: #EAEAEA;
   font-family: "Roboto", sans-serif;
@@ -115,6 +107,7 @@ table {
 .search-field__input::placeholder {
   color: #353535;
   font-size: 16px;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
 
@@ -158,6 +151,7 @@ main {
 .header__logo {
   font-family: "Shrikhand", serif;
   margin: 14px 89px 13px 89px;
+  font-size: 36px;
 }
 
 .box-liste {
@@ -179,7 +173,8 @@ main {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
-  margin: 22px 25px 22px 25px;
+  gap: 7px;
+  margin: 25px 0 25px 25px;
 }
 
 body {
@@ -201,7 +196,7 @@ img {
 }
 .info-restaurant__heading {
   margin: 0;
-  padding: 58px 58px 0 42px;
+  padding: 40px 40px 0 42px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 24px;

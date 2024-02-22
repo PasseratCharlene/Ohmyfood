@@ -7,22 +7,18 @@ $grey-2: #EAEAEA;
 .search-field {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50px;
-    gap: 17px;
     background: $grey-2;
-    display: flex;
-    gap: 5px;
     align-items: baseline;
 
     &__icon {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        align-items:center;
+        padding-left: 35px;
         color: $grey; 
     }
     &__input input {
         margin: 20px;
+        padding-left: 0;
         border: none;
         background: $grey-2;
         font-family: 'Roboto', sans-serif;
@@ -30,6 +26,7 @@ $grey-2: #EAEAEA;
     &__input::placeholder {
         color: $grey;
         font-size: 16px;
+        font-weight: 500;
         font-family: 'Roboto', sans-serif;
     }
 
