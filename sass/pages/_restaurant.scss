@@ -1,5 +1,6 @@
 @import "./../abstracts/variables";
 $white:#FFF;
+$black:#000000;
 $background: #F6F6F6;
 $Green: #99E2D0;
 
@@ -55,6 +56,7 @@ $Green: #99E2D0;
 }
 
 .title_menu_3 {
+    color: $black;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -76,18 +78,21 @@ $Green: #99E2D0;
         display: flex;
         flex-direction: column;
         margin-bottom: 5px;
+        color: $black;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         font-weight: 500;
     }
     & p {
         display: flex;
+        color: $black;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 300;
     }
     & span {
         display: flex;
+        color: $black;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 700;
