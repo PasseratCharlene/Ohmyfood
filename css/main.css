@@ -19,7 +19,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  /* font: inherit; */
+  font: inherit;
   vertical-align: baseline;
 }
 
@@ -346,9 +346,12 @@ img {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 0;
   font-family: "Shrikhand", serif;
+  font-size: 30px;
 }
 .title-header i {
   padding-right: 42px;
+  width: 30px;
+  height: 30px;
 }
 
 .img_palette img {

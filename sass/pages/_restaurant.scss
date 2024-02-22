@@ -14,9 +14,12 @@ $Green: #99E2D0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); 
     margin: 0;
     font-family: 'Shrikhand', serif;
+    font-size: 30px;
 
-    & i {
+    & i{
         padding-right: 42px;
+        width: 30px;
+        height: 30px;
     }
 }
 
