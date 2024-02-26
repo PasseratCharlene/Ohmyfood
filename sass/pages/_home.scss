@@ -53,21 +53,30 @@ img {
 //**** BEGIN FONCTION ****//
 
 .fonctionnement {
-    color: $black;
-    font-family: 'Roboto',sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 54px 80px 0 20px;
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__title {
+        color: $black;
+        font-family: 'Roboto',sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 54px 80px 0 20px;
+    }
 
     &__btn {
         display: flex;
         flex-direction: column;
         margin: 20px 20px 0 33px;
         padding-bottom: 68px;
-        gap: 25px;
+        gap: 35px;
     }
     &__btn i {
-        padding: 20px;
+        padding: 25px;
         width: 13px;
     }
     &__btn button {
@@ -130,6 +139,8 @@ img {
     }
 
     .restaurants-cards {
+        display: flex;
+        flex-direction: column;
         margin: 0 18px 0 17px;
 
         a img {
