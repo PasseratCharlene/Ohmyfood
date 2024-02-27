@@ -10,16 +10,19 @@ $Green: #99E2D0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 14px 89px 13px 17px;
+    padding: 14px 8px 13px 17px;
     background: $white; 
     margin: 0;
     font-family: 'Shrikhand', serif;
     font-size: 30px;
+    position: relative;
 
-    & a i {
+    & a {
         padding-right: 42px;
         width: 30px;
         height: 30px;
+        position: absolute;
+        left: 0;
     }
 }
 
@@ -62,9 +65,15 @@ $Green: #99E2D0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    border-bottom: $Green 3px solid;
-    padding-bottom: 5px;
-    width: 40px;
+    padding-bottom: 20px;
+
+    &::after {
+        content: " ";
+        width: 40px;
+        height: 3px;
+        background-color: $Green;
+        display: block;
+    }
 }
 
 .cards-menu {
@@ -192,5 +201,33 @@ $Green: #99E2D0;
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 926px) {
+
+    .title-header {
+        margin: auto;
+        max-width: 1440px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        position: relative;
+        margin-top: -15rem ;
+    }
+    .menu__container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+    }
+
+    .menu__title {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
     }
 }

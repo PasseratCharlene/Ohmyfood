@@ -3,31 +3,6 @@
 
 /* Small devices (phones, less than 768px) */
 @media screen and (min-width: 926px) {
-
-    .title-header {
-        margin: auto;
-        max-width: 1440px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        z-index: 10;
-        position: relative;
-        margin-top: -15rem ;
-    }
-    .menu__container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin: auto;
-    }
-
-    .menu__title {
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-    }
     .likes {
         padding-left: 20px;
     }
@@ -118,7 +93,6 @@
         justify-content: end;
         align-items:last baseline;
     }
-
 }
 
 .menu-card:hover >div:first-child {
@@ -129,3 +103,4 @@
     display: flex;
     width: 15%;
 }
+

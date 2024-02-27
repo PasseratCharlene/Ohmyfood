@@ -199,6 +199,16 @@ main {
   margin: 25px 0 25px 25px;
 }
 
+@media screen and (min-width: 926px) {
+  .box-liste {
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .box-liste > div {
+    display: flex;
+    gap: 7px;
+  }
+}
 body {
   margin: auto;
 }
@@ -377,16 +387,19 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 14px 89px 13px 17px;
+  padding: 14px 8px 13px 17px;
   background: #FFF;
   margin: 0;
   font-family: "Shrikhand", serif;
   font-size: 30px;
+  position: relative;
 }
-.title-header i {
+.title-header a {
   padding-right: 42px;
   width: 30px;
   height: 30px;
+  position: absolute;
+  left: 0;
 }
 
 .restaurant_palette {
@@ -424,9 +437,14 @@ img {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  border-bottom: #99E2D0 3px solid;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
+}
+.title_menu_3::after {
+  content: " ";
   width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  display: block;
 }
 
 .cards-menu {
@@ -547,6 +565,31 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 926px) {
+  .title-header {
+    margin: auto;
+    max-width: 1440px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: relative;
+    margin-top: -15rem;
+  }
+  .menu__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+  }
+  .menu__title {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -29,3 +29,19 @@ $white:#FFF;
     }
     
 }
+
+@media screen and (min-width: 926px) {
+
+    .box-liste {
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+    
+    .box-liste > div {
+        display: flex;
+        gap: 7px;
+    }
+}
+
+
+
