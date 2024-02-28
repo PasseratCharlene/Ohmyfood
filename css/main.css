@@ -54,6 +54,50 @@ table {
   font-family: "Shrikhand", serif;
 }
 
+.loader {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#faa2e7, #FFFFFF);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader > div {
+  height: 100px;
+  width: 100px;
+  border: 15px solid #FFFFFF;
+  border-top-color: #ad21b2;
+  border-bottom-color: #faa2e7;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .menu-card:nth-of-type(1) {
   animation-delay: 0.1s;
 }
