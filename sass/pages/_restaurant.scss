@@ -18,6 +18,7 @@ $Green: #99E2D0;
     position: relative;
 
     & a {
+        color: $black;
         margin-left: 20px;
         padding-right: 42px;
         width: 30px;
@@ -182,12 +183,10 @@ $Green: #99E2D0;
             }
         }
         & span {
-            display: flex;
             color: $black;
             font-family: 'Roboto', sans-serif;
             font-size: 15px;
             font-weight: 700;
-            padding-left: 40px;
         }
     }
     &__checking {

@@ -8,14 +8,17 @@ $white:#FFF;
     background:$grey;
     color:$white;
     width: 100%;
+    padding: 20px;
 
     &__logo {
-        padding: 22px 25px 22px 25px;
         font-family: 'Shrikhand', serif;
         font-size: 18px;
         font-weight: 400;
-        gap: 16px;
-        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__liste{
+        margin-block: 7px;
     }
 
     &__liste a {
@@ -24,8 +27,6 @@ $white:#FFF;
         font-family: 'Roboto';
         font-size: 16px;
         font-weight: 500;
-        gap: 7px;
-        margin: 25px 0 25px 25px;
     }
     
 }
