@@ -63,7 +63,6 @@ $Green: #99E2D0;
 
 .title_menu_3 {
     color: $black;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
     padding-bottom: 20px;
@@ -74,6 +73,7 @@ $Green: #99E2D0;
         height: 3px;
         background-color: $Green;
         display: block;
+        margin-top: 5px;
     }
 }
 
@@ -96,21 +96,18 @@ $Green: #99E2D0;
         flex-direction: column;
         margin-bottom: 5px;
         color: $black;
-        font-family: 'Roboto', sans-serif;
         font-size: 17px;
         font-weight: 500;
     }
     & p {
         display: flex;
         color: $black;
-        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 300;
     }
     & span {
         display: flex;
         color: $black;
-        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 700;
         padding-left: 40px;
@@ -156,7 +153,6 @@ $Green: #99E2D0;
             overflow: hidden;
             display: block;
             color: $black;
-            font-family: 'Roboto', sans-serif;
             font-size: 17px;
             font-weight: 500;
 
@@ -166,13 +162,11 @@ $Green: #99E2D0;
             display: flex;
             justify-content: space-between; 
             align-items: baseline;
-            font-family: 'Roboto', sans-serif;
             font-size: 15px;
             font-weight: 300;
 
             &--paragraph {
                 margin: 0;
-                font-family: 'Roboto', sans-serif;
                 font-weight: 300;
                 font-size: 0.9rem;
                 color: #3b3b3b;
@@ -184,7 +178,6 @@ $Green: #99E2D0;
         }
         & span {
             color: $black;
-            font-family: 'Roboto', sans-serif;
             font-size: 15px;
             font-weight: 700;
         }

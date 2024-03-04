@@ -549,7 +549,6 @@ img {
 
 .title_menu_3 {
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 20px;
@@ -560,6 +559,7 @@ img {
   height: 3px;
   background-color: #99E2D0;
   display: block;
+  margin-top: 5px;
 }
 
 .cards-menu {
@@ -580,21 +580,18 @@ img {
   flex-direction: column;
   margin-bottom: 5px;
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
 }
 .cards-menu p {
   display: flex;
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
 .cards-menu span {
   display: flex;
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 700;
   padding-left: 40px;
@@ -638,7 +635,6 @@ img {
   overflow: hidden;
   display: block;
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
 }
@@ -647,13 +643,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
 .menu-card__infos-description--paragraph {
   margin: 0;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
   color: #3b3b3b;
@@ -664,7 +658,6 @@ img {
 }
 .menu-card__infos span {
   color: #000000;
-  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
