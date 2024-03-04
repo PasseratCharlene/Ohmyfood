@@ -516,6 +516,7 @@ img {
   position: relative;
 }
 .title-header a {
+  margin-left: 20px;
   padding-right: 42px;
   width: 30px;
   height: 30px;
