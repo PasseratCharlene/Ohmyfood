@@ -151,6 +151,11 @@ table {
   transition: 0.5s;
 }
 
+@media screen and (min-width: 926px) {
+  .likes {
+    padding-left: 20px;
+  }
+}
 .search-field {
   display: flex;
   justify-content: center;
@@ -202,6 +207,12 @@ table {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 926px) {
+  .button {
+    width: 335px;
+    height: 72.4px;
+  }
+}
 main {
   margin: auto;
 }
@@ -247,6 +258,12 @@ main {
   .box-liste {
     flex-direction: row-reverse;
     gap: 30px;
+    display: flex;
+    max-width: 1440px;
+    height: 114px;
+    margin: auto;
+    justify-content: end;
+    align-items: last baseline;
   }
   .box-liste > div {
     display: flex;
@@ -351,6 +368,15 @@ img {
   height: 19px;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement .fonctionnement__title {
+  margin-left: 860px;
+  margin: auto;
+}
+
 .restaurants {
   background: #F6F6F6;
   gap: 18px;
@@ -427,6 +453,57 @@ img {
   padding-bottom: 12px;
 }
 
+@media screen and (min-width: 926px) {
+  .fonctionnement__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurant_palette {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    max-width: 1440px;
+    height: 36rem;
+  }
+  .restaurant_palette--img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    height: 70%;
+    object-position: 85% 75%;
+    object-fit: cover;
+  }
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 2rem 0;
+  }
+  .restaurants .restaurant-title {
+    margin-left: 860px;
+    margin: auto;
+  }
+  .restaurants .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurants .restaurants-cards a img {
+    aspect-ratio: 490/251;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+  }
+  .resto-cards {
+    width: 490px;
+    margin-top: 2rem;
+  }
+}
 .title-header {
   display: flex;
   flex-direction: row;
@@ -633,6 +710,17 @@ img {
     display: flex;
     margin: auto;
     justify-content: space-between;
+  }
+  .menu-card {
+    min-width: 634px;
+  }
+  .menu-card:hover > div:first-child {
+    min-width: 85%;
+  }
+  .menu-card:hover > div:last-child {
+    visibility: visible;
+    display: flex;
+    width: 15%;
   }
 }
 

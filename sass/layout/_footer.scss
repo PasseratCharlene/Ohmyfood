@@ -35,6 +35,12 @@ $white:#FFF;
     .box-liste {
         flex-direction: row-reverse;
         gap: 30px;
+        display: flex;
+        max-width: 1440px;
+        height: 114px;
+        margin: auto;
+        justify-content: end;
+        align-items:last baseline;
     }
     
     .box-liste > div {

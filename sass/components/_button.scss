@@ -4,7 +4,6 @@ $secondary:#FF79DA;
 $purple:#b195b8;
 $White: #FFF;
 
-
 .btn {
     display: flex;
     flex-direction: row;
@@ -31,3 +30,11 @@ $White: #FFF;
     }
 }
     
+@media screen and (min-width: 926px) {
+
+    .button {
+        width: 335px;
+        height: 72.40px;
+    }
+
+}

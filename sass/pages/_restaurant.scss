@@ -230,4 +230,17 @@ $Green: #99E2D0;
         margin: auto;
         justify-content: space-between;
     }
+
+    .menu-card {
+        min-width: 634px;
+    }
+
+    .menu-card:hover >div:first-child {
+        min-width: 85%;
+    }
+    .menu-card:hover >div:last-child {
+        visibility: visible;
+        display: flex;
+        width: 15%;
+    }
 }

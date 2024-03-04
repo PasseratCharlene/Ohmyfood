@@ -124,6 +124,17 @@ img {
     }
 }
 
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+
+    .fonctionnement__title {
+        margin-left: 860px;
+        margin:auto;
+    }
+}
+
+
 //**** BEGIN RESTAURANT ****//
 
 .restaurants {
@@ -204,5 +215,68 @@ img {
     margin: 5px 80px 12px 16px;
     padding-bottom: 12px;
 }
+
+@media screen and (min-width: 926px) {
+
+    .fonctionnement__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .restaurant_palette {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        max-width: 1440px;
+        height: 36rem;
+    }
+
+    .restaurant_palette--img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        height: 70%;
+        object-position: 85% 75%;
+        object-fit: cover;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 0 2rem 0;
+
+        .restaurant-title {
+            margin-left: 860px;
+            margin:auto;
+        }
+
+        .restaurants-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 90px;
+            justify-content: center;
+            align-items: center;
+    
+            a img {
+                aspect-ratio: 490/251;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 15px 15px 0 0;
+            }
+        }
+    }
+
+    .resto-cards {
+        width: 490px;
+        margin-top: 2rem;
+    }
+
+}
+
+
 
 
