@@ -77,6 +77,16 @@ $Green: #99E2D0;
     }
 }
 
+.menu__container {
+    opacity: 0 ;
+}
+@for $i from 0 through 2 {
+    .menu__container:nth-child(#{$i + 4}){
+        animation: loadingdish 2s ease-in forwards;
+        animation-delay: #{$i}s;
+    }
+}
+
 .cards-menu {
     display: flex;
     overflow: hidden;
